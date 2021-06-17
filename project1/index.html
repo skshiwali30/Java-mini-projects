@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html>
+<head>	
+
+<style>
+
+.footer {  
+	left: 10px;  
+	bottom: 5px;  
+	right: 10px;   
+	width: 94%;  
+	background-color: gray;  
+	color: white;  
+	text-align: center; 
+	padding: 8px; 
+	margin-left: 30px;
+	margin-top: 20px;
+}  
+
+</style>
+
+	<!-- Load icon library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="basic.css">
+	<link data-require="datatables@*" data-semver="1.10.12" rel="stylesheet" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" />
+</head>
+	
+<body>
+
+	<div class="topnav">
+		<a class="active" href="https://www.ncr.com/" target="_blank">Home</a>
+		<input id="searchbar" onkeyup="search_users()" type="text" placeholder="Search Users..">
+	</div>
+
+		
+	<table id="myTable" class="userTable">
+		<tr class="header">
+			<th>Id</th>
+			<th>Name</th>
+			<th>UserName</th>
+			<th>Email</th>
+			<th>Address</th>
+			<th>Phone</th>
+			<th>Website</th>
+			<th>Company</th>
+			<th>Post</th>
+		</tr>
+	</table>
+	
+	<div class="footer">  
+		@Copyright <a href="https://github.com/skshiwali30"> mini-projects </a> 2021- All Right Reserved.   
+	</div>
+	
+	<script data-require="datatables@*" data-semver="1.10.12" src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.js"></script>
+	<script data-require="jquery@*" data-semver="3.0.0" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js"></script>
+	<script src="index.js"></script>
+	
+</body>
+</html>
